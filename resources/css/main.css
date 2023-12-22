@@ -1,0 +1,447 @@
+/* CSS Reset Start */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS Reset End */
+
+/* Design Guide Start */
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+/* Design Guide Start */
+
+/* Main CSS */
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Roboto:wght@300;400;500;900&display=swap');
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-menu {
+    background: #00afb5;
+}
+
+.main-menu-nav {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    display: inline-block;
+}
+
+.logo a {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo a:hover {
+    padding-left: 5px;
+}
+
+.logo img {
+    max-height: 30px;
+}
+
+.main-menu-links ul {
+    display: flex;
+    height: 100%;
+}
+
+
+
+.main-menu-links ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    transition: 0.2s;
+}
+
+.main-menu-links ul li:hover {
+    padding: 7px 0 7px 10px;
+}
+
+.main-menu-links ul li a {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.2s;
+}
+
+.main-menu-links ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.main-menu-links ul li a:active {
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.main-menu-links ul li a.active {
+    background-color: #fff;
+    color: #525252;
+
+}
+
+
+.address {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+}
+
+.address div {
+    border-radius: 20px;
+}
+
+.mb40 {
+    margin-bottom: 40px !important;
+}
+
+.mt40 {
+    margin-top: 40px !important;
+}
+
+.address-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 20px;
+    background-color: rgb(0 175 181 / 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.address-text h5 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #00afb5;
+}
+
+.address-text p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #525252;
+}
+
+.address-map {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    height: 250px;
+    overflow: hidden;
+}
+
+.address-map img {
+    object-fit: cover;
+    transition: 1s;
+}
+
+.address-map:hover>img {
+    scale: 1.2;
+}
+
+.socials {
+    height: 70px;
+    background: #525252;
+}
+
+.socials .main-menu-links ul li a:hover {
+    padding: 0 20px;
+}
+
+.socials div ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.socials div.main-menu-links {
+    height: 100%;
+}
+
+
+.socials .main-menu-links ul li {
+    padding: 10px 5px 10px 5px;
+    ;
+}
+
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    color: #00afb5;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.title.dark {
+    color: #fff;
+}
+
+.button-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-align: center;
+    background-color: #00afb5;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    border: solid #fff 5px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.button.colour {
+    border: solid #f2fbfb 5px;
+}
+
+.button.white {
+    background-color: #fff;
+    color: #00afb5;
+    border: solid #00afb5 5px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.button:hover {
+    border: solid #d2ffff 5px;
+    padding: 20px 35px;
+}
+
+.button.white:hover {
+    border: solid #009da3 5px;
+    padding: 20px 30px;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-item-c {
+    align-items: center;
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.about-us {
+    background: #f2fbfb;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #525252;
+    margin-bottom: 10px;
+}
+
+.about-us h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    color: #525252;
+}
+
+.logo-parent {
+    background: #00afb5;
+    padding: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.logo-parent img {
+    height: 40px;
+    width: auto;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.extra-links {
+    background: #00afb5;
+}
