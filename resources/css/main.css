@@ -445,3 +445,83 @@ h1 {
 .extra-links {
     background: #00afb5;
 }
+
+@media only screen and (max-width: 1070px) {
+    .container {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+
+    .address {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .address-text {
+        height: 240px;
+        margin-bottom: 20px;
+    }
+
+    .address-text,
+    .address-map {
+        grid-column-start: initial;
+        grid-column-end: initial;
+    }
+}
+
+
+
+@media only screen and (max-width: 520px) {
+    .ta-welcome h1 {
+        font-size: 30px;
+        padding: 15px 0 30px 0;
+    }
+
+    .ta-welcome p {
+        font-size: 20px;
+    }
+
+    .main-menu-nav {
+        height: 150px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .logo a img {
+        height: 25px;
+    }
+
+    .main-menu-links {
+        height: 50%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .socials.extra-links {
+        display: block;
+    }
+
+    .logo-parent {
+        padding: 20px;
+    }
+
+    .logo-parent img {
+        height: auto;
+        width: 100%;
+    }
+
+
+}

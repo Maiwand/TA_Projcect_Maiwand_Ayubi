@@ -181,3 +181,98 @@
     border: 5px solid #00afb5;
     box-sizing: border-box;
 }
+
+
+@media only screen and (max-width: 1070px) {
+
+    .ta-welcome h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 930px) {
+
+    .ta-welcome {
+        padding: 50px;
+    }
+
+    .ta-welcome h1 {
+        font-size: 40px;
+    }
+
+    .reviews-parent {
+        grid-template-columns: repeat(2, 1fr);
+        width: initial;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+
+    .reviews-parent {
+        grid-template-columns: repeat(1, 1fr);
+        width: initial;
+    }
+
+    .address {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .address-text {
+        height: 240px;
+        margin-bottom: 20px;
+    }
+
+    .address-text,
+    .address-map {
+        grid-column-start: initial;
+        grid-column-end: initial;
+    }
+
+    .destinations-sec {
+        display: none !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 520px) {
+    .ta-welcome h1 {
+        font-size: 30px;
+        padding: 15px 0 30px 0;
+    }
+
+    .ta-welcome p {
+        font-size: 20px;
+    }
+
+    .main-menu-nav {
+        height: 150px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .logo a img {
+        height: 25px;
+    }
+
+    .main-menu-links {
+        height: 50%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .socials.extra-links {
+        display: block;
+    }
+}

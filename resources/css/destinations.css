@@ -58,3 +58,21 @@
     margin: 0;
     text-align-last: left;
 }
+
+@media only screen and (max-width: 760px) {
+    .dest-text {
+        padding: 20px 50px;
+    }
+
+    .dest-page-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .booknow {
+        justify-content: center;
+    }
+
+    .booknow h3 {
+        display: none;
+    }
+}
