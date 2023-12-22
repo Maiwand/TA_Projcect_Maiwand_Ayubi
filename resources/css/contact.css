@@ -69,3 +69,16 @@ input[type=number] {
     border: none;
     background: #04898e;
 }
+
+@media only screen and (max-width: 520px) {
+
+
+    .c-2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+    }
+
+    .about-us {
+        padding: 30px;
+    }
+}
